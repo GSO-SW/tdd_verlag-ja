@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Donge\\Desktop\\GSO\\3.Überstufe\\SWE\\GIT\\Neuer Ordner\\tdd_verlag-ja\\Verlag\\Verlag.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Donge\\Desktop\\GSO\\3.Überstufe\\SWE\\GIT\\Neuer Ordner\\tdd_verlag-ja\\Verlag\\Verlag.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Donge\\Desktop\\GSO\\3.Überstufe\\SWE\\GIT\\Neuer Ordner\\tdd_verlag-ja\\Verlag\\Verlag.csproj",
+        "projectName": "Verlag",
+        "projectPath": "C:\\Users\\Donge\\Desktop\\GSO\\3.Überstufe\\SWE\\GIT\\Neuer Ordner\\tdd_verlag-ja\\Verlag\\Verlag.csproj",
+        "packagesPath": "C:\\Users\\Donge\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Donge\\Desktop\\GSO\\3.Überstufe\\SWE\\GIT\\Neuer Ordner\\tdd_verlag-ja\\Verlag\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Donge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

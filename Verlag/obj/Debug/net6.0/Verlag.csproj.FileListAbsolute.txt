@@ -1,0 +1,15 @@
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\bin\Debug\net6.0\Verlag.exe
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\bin\Debug\net6.0\Verlag.deps.json
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\bin\Debug\net6.0\Verlag.runtimeconfig.json
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\bin\Debug\net6.0\Verlag.dll
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\bin\Debug\net6.0\Verlag.pdb
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\obj\Debug\net6.0\Verlag.csproj.AssemblyReference.cache
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\obj\Debug\net6.0\Verlag.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\obj\Debug\net6.0\Verlag.AssemblyInfoInputs.cache
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\obj\Debug\net6.0\Verlag.AssemblyInfo.cs
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\obj\Debug\net6.0\Verlag.csproj.CoreCompileInputs.cache
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\obj\Debug\net6.0\Verlag.dll
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\obj\Debug\net6.0\refint\Verlag.dll
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\obj\Debug\net6.0\Verlag.pdb
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\obj\Debug\net6.0\Verlag.genruntimeconfig.cache
+C:\Users\Donge\Desktop\GSO\3.Überstufe\SWE\GIT\Neuer Ordner\tdd_verlag-ja\Verlag\obj\Debug\net6.0\ref\Verlag.dll

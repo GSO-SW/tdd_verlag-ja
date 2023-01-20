@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Verlag
 {
-    internal class Buch
+    public class Buch
     {
         private string autor;
         private string titel;
@@ -19,7 +19,7 @@ namespace Verlag
 
         public Buch(string autor, string titel)
         {
-            this.autor = autor;
+            this.Autor = autor;
             this.titel = titel;
         }
 
@@ -38,10 +38,10 @@ namespace Verlag
                 {
                     if (value.Contains(c) || value == "" || value is null)
                     {
-                        throw new ArgumentException("Unerlaubte Zeichen bei Autor.");
+                        throw new ArgumentException("Unerlaubte Eingabe bei Autor.");
                     }
                 }
-                this.autor = value; 
+                this.autor = value;
             }
         }
 
