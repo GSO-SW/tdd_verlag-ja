@@ -16,7 +16,7 @@ namespace VerlagTests
 			int auflage = 1;
 
 			//Act 
-			Buch b = new Buch(autor, titel, auflage);
+			Buch b = new Buch(autor, titel, 12, auflage);
 
 			//Assert
 			Assert.AreEqual(autor, b.Autor);
@@ -30,7 +30,7 @@ namespace VerlagTests
 			//Arrange
 
 			//Act 
-			Buch b = new Buch("autor", "titel");
+			Buch b = new Buch("autor", "titel", 12);
 
 			//Assert
 			Assert.AreEqual(1, b.Auflage);
@@ -44,7 +44,7 @@ namespace VerlagTests
 			string autorNeu = "Thomas";
 
 			//Act
-			Buch b = new Buch(autor, "titel");
+			Buch b = new Buch(autor, "titel", 12);
 			b.Autor = autorNeu;
 
 			//Assert
@@ -60,7 +60,7 @@ namespace VerlagTests
 			int auflageNeu = 42;
 
 			//Act
-			Buch b = new Buch("autor", "titel", auflage);
+			Buch b = new Buch("autor", "titel", 12, auflage);
 			b.Auflage = auflageNeu;
 
 			//Assert
@@ -76,25 +76,23 @@ namespace VerlagTests
 			int auflage = 0;
 
 			//Act
-			Buch b = new Buch("autor", "titel", auflage);
+			Buch b = new Buch("autor", "titel", 12, auflage);
 		}
 
 		[TestMethod]
 		[ExpectedException(typeof(ArgumentOutOfRangeException))]
 		public void Auflage_DarfNichtZuKleinSein()
 		{
-			//Arrange
-			Buch b = new Buch("autor", "titel");
-			int auflageNeu = 0;
-
-			//Act
-			b.Auflage = auflageNeu;
+            //Act
+            Buch b = new Buch("autor", "titel", 12);
+            int auflageNeu = 0;
+            b.Auflage = auflageNeu;
 		}
 
 		// DataRow: https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest#add-more-features
 		[TestMethod]
 		[DataRow("")]
-		[DataRow("#Alex")]
+		[DataRow("Ale#x")]
 		[DataRow(";Max")]
 		[DataRow("§Nadia")]
 		[DataRow("%DC")]
@@ -102,7 +100,7 @@ namespace VerlagTests
 		public void Autor_NurSinnvolleEingabenErlaubt(string nichtsinvolleEingabe)
 		{
 			//Act
-			Buch b = new Buch(nichtsinvolleEingabe, "titel");
+			Buch b = new Buch(nichtsinvolleEingabe, "titel", 12);
 		}
 	}
 }
