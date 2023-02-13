@@ -13,7 +13,9 @@ namespace Verlag
         private string titel;
         private int auflage = 1;
         private string iSBN13;
+        private string iSBN10;
         private double preis;
+
 
         public Buch(string autor, string titel, double preis, int auflage) : this(autor, titel, preis)
         {
@@ -75,23 +77,27 @@ namespace Verlag
             get { return this.iSBN13;}
             set
             {
+                
                 if (value.Length == 13)
                 {
                     this.iSBN13 = value;
+                    this.iSBN10 = iSBN10Pruefziffer(value);
                 }
                 else if (value.Length == 12)
                 {
-                    int geradeZ;
-                    int ungeradeZ;
-                    int pZ;
-                    geradeZ = value[0] + value[2] + value[4] + value[6] + value[8] + value[10];
-                    ungeradeZ = 3 * (value[1] + value[3] + value[5] + value[7] + value[9] + value[11]);
-
-                    pZ = 10 - ((geradeZ + ungeradeZ) % 10);
-
-                    this.iSBN13 = value + pZ;
+                    this.iSBN13 = iSBN13Pruefziffer(value);
+                    this.iSBN10 = iSBN10Pruefziffer(value);
+                }
+                else
+                {
+                    throw new Exception("ISBN nicht vollständig.");
                 }
             }
+        }
+
+        public string ISBN10
+        {
+            get { return this.iSBN10; }
         }
 
         public double Preis
@@ -108,6 +114,32 @@ namespace Verlag
                     throw new ArgumentOutOfRangeException("Kein negativer Preis.");
                 }
             }
+        }
+
+        private string iSBN13Pruefziffer(string value)
+        {
+            int geradeZ;
+            int ungeradeZ;
+            int pZ;
+            geradeZ = (value[0] - '0') + (value[2] - '0') + (value[4] - '0') + (value[6] - '0') + (value[8] - '0') + (value[10] - '0');
+            ungeradeZ = 3 * ((value[1] - '0') + (value[3] - '0') + (value[5] - '0') + (value[7] - '0') + (value[9] - '0') + (value[11] - '0'));
+
+            pZ = 10 - ((geradeZ + ungeradeZ) % 10);
+
+            return $"{value}{pZ}";
+        }
+
+        private string iSBN10Pruefziffer(string value)
+        {
+            int behaelter = 0;
+            string iSBN10 = "";
+            for (int i = 3; i < 12; i++)
+            {
+                behaelter += (value[i] - '0') * (i - 2);
+                iSBN10 += $"{(value[i] - '0')}";
+            }
+            return iSBN10 + $"{behaelter % 11}";
+
         }
     }
 }
